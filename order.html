@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .img{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jyothi's Spice Emporium</h1>
+       <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="index.html">products</a></li>
+                <li><a href="cart.html" class="active">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <center> <h2 style="color: black;">Order Details</h2>
+        <form id="order-form" onsubmit="return false;">
+            <fieldset class="fieldset">
+            <label for="Name">Name:</label><br>
+            <input type="text" required><br>
+            <br>
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" rows="4" required></textarea><br><br>
+            <label for="payment">Payment QR Code:</label><br>
+            <img src="cart.png" alt="Payment QR Code" class="img"><br><br>
+            <button onclick="confirmOrder()">Confirm Order</button>
+        </fieldset></center>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jyothi's Spice Emporium</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
